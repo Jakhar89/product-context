@@ -15,7 +15,7 @@ npm build
 
 
 ## App Info
-This App is a react based product listing demo using Context API and showcasing the utilization of Props as well.  
+This App is a react based product listing demo using Context API and showcasing the utilization of Props as well. It calls to the API once but filters does work fine without any recalls.
 
 This is still loosely created as it is a demo. There is scope for improvements, such as:
 1. Taking functions to context folders and creating a separate file to be imported and used as a global source for functions.
