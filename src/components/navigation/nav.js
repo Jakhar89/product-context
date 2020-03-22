@@ -9,15 +9,16 @@ function Nav() {
          const value =useContext(MyContext);
          //creating filter as selector
          let filters=value.state.filters;
+         let Title = value.state.title;
          //useMemo to save re-rendering on Context change
-         //re-render only on filter update
+         //re-render only on filter and title update
          return useMemo(()=>{
 
             return <nav className='navigation row mb-2'>
                <div className='col-12 py-2'>
                <Link to='/hooks'>Hooks</Link>
                </div>
-               <div className='col-sm-8'>Women's tops</div>
+               <div className='col-sm-8'>{Title}</div>
                <select onChange={value.reRender} className='filter-select col-sm-3 mx-3'>
                   <option>Size filters</option>
 
@@ -27,7 +28,7 @@ function Nav() {
 
                </select>
             </nav>
-         },[filters])
+         },[filters,Title])
     
 }
 

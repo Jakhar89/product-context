@@ -21,6 +21,7 @@ class Search extends Component {
       });
       //updating filters through props
       this.context.updateFilters(sizes);
+      this.context.updateTitle(`Women's Tops`)
     }) 
   }
   

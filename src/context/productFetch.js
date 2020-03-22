@@ -5,13 +5,18 @@ class Product extends Component{
         filters:[],
         products:[],
         sizes:[],
-        filteredProducts:[]
+        filteredProducts:[],
+        title:''
       }
 
        //Update filters 
   updateFilters = (el)=>{
     this.setState({filters:[...el]})
   }
+  updateTitle=(el)=>{
+      this.setState({title:el})
+  }
+
   //update Products 
   updateProducts=(el)=>{
     this.setState({products:[...el]})
@@ -35,6 +40,7 @@ class Product extends Component{
         {state:this.state,
         updateProducts:this.updateProducts,
         updateFilters:this.updateFilters,
+        updateTitle:this.updateTitle,
         reRender:this.reRender}}>
             {this.props.children}
         </MyContext.Provider>

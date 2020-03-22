@@ -3,8 +3,9 @@ import {MyContext} from '../../context/productFetch';
 
 export default function Search2(){
     const value = useContext(MyContext);
-
+    
     useEffect(()=>{
+      value.updateTitle(`Hooks Component Demo`)
       //only Call when directly called as URL
       if(value.state.products.length <= 0){
           let setProducts = value.updateProducts;
