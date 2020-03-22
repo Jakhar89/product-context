@@ -4,10 +4,6 @@ import {MyContext} from '../../context/productFetch';
 
 class Search extends Component {
 
-  constructor(props) {
-    super(props);
-  
-  }
   componentDidMount(){
     let setProducts = this.context.updateProducts;
     let sizes=[];

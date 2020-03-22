@@ -1,6 +1,12 @@
 # product-context
 Product demo based upon React Context API
 
+http://localhost:3000/ Is default view with Class Component
+http://localhost:3000/hooks Will show view using React Hooks component
+
+# /hooks 
+Even while reaching /hooks from Nav bar, Context is consistent even Filtered results.
+
 ## Quick Start
 
 ``` bash

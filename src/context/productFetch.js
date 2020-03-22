@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-export const MyContext=React.createContext();
+const MyContext=React.createContext();
 class Product extends Component{
     state={
         filters:[],
@@ -41,4 +41,4 @@ class Product extends Component{
     }
 }
 
-export default Product;
+export {Product,MyContext};
