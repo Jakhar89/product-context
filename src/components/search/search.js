@@ -38,11 +38,11 @@ class Search extends Component {
         {(products.length > 0)?
           products.map((el,i)=>{
             let imgUrl= `assets/${el.productImage}`;
-            return (<div key={i} className='product-wrapper col-sm-3'>
+            return (<div key={i} className='product-wrapper d-sm-flex flex-sm-column d-md-block col-sm-3'>
                       <img className='product-img' src={require(`../../${imgUrl}`)} alt='product'/>
                       <div className='row'>
                         <div className='col-md-8'>{el.productName}</div>
-                        <div className='col-md-4'>{el.price}</div>
+                        <div className='col-md-4 pl-0'>{el.price}</div>
                         
                       </div>
                     </div>)
