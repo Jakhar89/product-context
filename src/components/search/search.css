@@ -1,0 +1,9 @@
+.product-img{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.product-wrapper{
+  border: 1px solid grey;
+}
