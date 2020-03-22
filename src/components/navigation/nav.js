@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import Filters from '../../context/productFetch';
+import React, {PureComponent} from 'react';
+import {MyContext} from '../../context/productFetch';
 
 import './nav.css';
 
-class Nav extends Component{
+class Nav extends PureComponent{
         
         render(){
            let filters=this.context.state.filters;
@@ -25,5 +25,5 @@ class Nav extends Component{
         }
     
 }
-Nav.contextType=Filters;
+Nav.contextType=MyContext;
 export default Nav;

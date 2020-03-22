@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './search.css';
-import Context from '../../context/productFetch';
+import {MyContext} from '../../context/productFetch';
 
 class Search extends Component {
 
@@ -24,11 +24,10 @@ class Search extends Component {
 
       });
       //updating filters through props
-      this.props.filterUpdate(sizes);
+      this.context.updateFilters(sizes);
     }) 
   }
   
-
   render() {
     let state=this.context.state;
     let products=(state.filteredProducts.length > 0)?state.filteredProducts:state.products;
@@ -54,6 +53,6 @@ class Search extends Component {
     );
   }
 }
-Search.contextType=Context
+Search.contextType=MyContext
 
 export default Search;
