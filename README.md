@@ -25,6 +25,8 @@ This is still loosely created as it is a demo. There is scope for improvements, 
 3. Scripts for Watch and Compilation, development practices.
 
 4. Proxy should be set up in package.json for calling another PORT.
+
+5. Multiple Contexts to be used in case of large objects.
 ### Author
 
 Jack Jakhar

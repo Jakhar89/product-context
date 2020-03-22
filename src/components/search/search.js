@@ -53,6 +53,7 @@ class Search extends Component {
     );
   }
 }
+//Attaching context to be consumed
 Search.contextType=MyContext
 
 export default Search;

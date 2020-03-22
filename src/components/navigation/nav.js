@@ -4,7 +4,8 @@ import {MyContext} from '../../context/productFetch';
 import './nav.css';
 
 class Nav extends PureComponent{
-        
+      //Attaching context to be consumed
+       static contextType=MyContext;
         render(){
            let filters=this.context.state.filters;
            let state=this.context;
@@ -25,5 +26,5 @@ class Nav extends PureComponent{
         }
     
 }
-Nav.contextType=MyContext;
+
 export default Nav;
