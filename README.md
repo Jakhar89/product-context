@@ -7,6 +7,9 @@ http://localhost:3000/hooks Will show view using React Hooks component
 # /hooks 
 Even while reaching /hooks from Nav bar, Context is consistent even Filtered results.
 
+# JSON API
+https://jsonbin.io/5e748418c4a5cb1628678528/1
+
 ## Quick Start
 
 ``` bash
